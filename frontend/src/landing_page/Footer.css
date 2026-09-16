@@ -1,0 +1,27 @@
+.footer {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+  align-items: center !important; /* Aligns them vertically in the center */
+  width: 100% !important;
+  padding: 20px 40px !important;
+  background-color: #e0e1dd !important;
+  color: #415a77 !important;
+  box-sizing: border-box !important;
+}
+
+.footer1 {
+  max-width: 25rem !important;
+  /* flex: 1 !important;  */
+}
+
+.footer2 {
+  max-width: 30rem !important;
+  /* flex: 2 !important; */
+  text-align: left !important; /* Right-aligns the disclaimer text */
+}
+
+/* Ensures icon has spacing from text */
+.footer1 h3 i {
+  margin-right: 8px !important;
+}
