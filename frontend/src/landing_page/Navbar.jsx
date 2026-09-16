@@ -1,14 +1,15 @@
 import React from "react";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <Link class="navbar-brand" to="/">
           <i class="fa-brands fa-phoenix-squadron"></i>
           Phoenix
-        </a>
+        </Link>
         <button
           class="navbar-toggler"
           type="button"
@@ -23,22 +24,24 @@ function Navbar() {
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">
+              <Link class="nav-link active" aria-current="page" to="/products">
                 Products
-              </a>
+              </Link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <Link class="nav-link" to="/support">
                 Support
-              </a>
+              </Link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <Link class="nav-link" to="/about">
                 About
-              </a>
+              </Link>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled">Signup</a>
+              <Link class="nav-link" to="/signup">
+                Signup
+              </Link>
             </li>
           </ul>
         </div>
