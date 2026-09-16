@@ -1,0 +1,9 @@
+.statsContainer{
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers child elements (img, button) horizontally */
+  justify-content: center; /* Centers content vertically if container has a set height */
+  text-align: center; /* Centers multi-line text (h1, p) */
+  margin: 0 auto;
+}
