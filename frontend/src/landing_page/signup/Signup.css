@@ -1,0 +1,15 @@
+.signupContainer {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers child elements (img, button) horizontally */
+  justify-content: center; /* Centers content vertically if container has a set height */
+  text-align: center; /* Centers multi-line text (h1, p) */
+  margin: 0 auto; /* Keeps the container itself centered on the page */
+}
+
+/* Optional: Ensure image stays responsive within small screens */
+.signupContainer img {
+  max-width: 100%;
+  height: auto;
+}
