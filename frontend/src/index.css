@@ -1,0 +1,10 @@
+.appContainer {
+  display: flex !important;
+  flex-direction: column !important;
+  min-height: 100vh !important; /* Spans full height of the viewport */
+}
+
+.space {
+  flex: 1 0 auto !important; /* Grows automatically to fill remaining space */
+  width: 100% !important;
+}

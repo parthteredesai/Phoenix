@@ -13,15 +13,19 @@ import RouteError from "./landing_page/RouteError";
 
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
-    <Navbar />
-    <Routes>
-      <Route path="/" element={<HomePage />}></Route>
-      <Route path="/products" element={<ProductsPage />}></Route>
-      <Route path="/support" element={<SupportPage />}></Route>
-      <Route path="/about" element={<AboutPage />}></Route>
-      <Route path="/signup" element={<SignupPage />}></Route>
-      <Route path="*" element={<RouteError />}></Route>
-    </Routes>
-    <Footer />
+    <div className="appContainer">
+      <Navbar />
+      <div className="space">
+        <Routes>
+          <Route path="/" element={<HomePage />}></Route>
+          <Route path="/products" element={<ProductsPage />}></Route>
+          <Route path="/support" element={<SupportPage />}></Route>
+          <Route path="/about" element={<AboutPage />}></Route>
+          <Route path="/signup" element={<SignupPage />}></Route>
+          <Route path="*" element={<RouteError />}></Route>
+        </Routes>
+      </div>
+      <Footer />
+    </div>
   </BrowserRouter>,
 );
